@@ -128,7 +128,7 @@ archivos inicial y configuración basica de dependencias y tests.
 Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
 y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
 setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
+coverage_ para ver el nivel de cobertura de los tests usando el comando `npm.
 test`.
 
 El boilerplate que les damos contiene esta estructura:
