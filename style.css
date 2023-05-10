@@ -1,0 +1,48 @@
+  body {
+    background-image:url(Img/imagen1.jpg);
+    padding: 60px 0;
+    background-color: rgba(107, 12, 56, 0.186);
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-family: "Lucida Sans"
+  }
+  
+  form{
+    font-size: 20px;
+    font-family: "Lucida Sans"
+  }
+
+  input {
+    margin: 1px 0;
+    padding-left: 3%;
+    font-size: 14px;
+  }
+
+  input[type="text"]{
+    display: block;
+    height: 50px;
+    width: 97%;
+    border: none;
+  }
+
+  input[type="submit"]{
+    display: block;
+    height: 60px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #a280b5d3;
+    color: #f2f4f3;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+
+ 

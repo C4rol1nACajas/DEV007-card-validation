@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <form id="formValidation">
+
+          <h1>INFORMACIÓN DE PAGO</h1>
+        
+        <div>
+        
+           <label for="primer-nombre">Primer Nombre</label>
+           <input id="txtPrimerNombre" type="text" name="primer-nombre" placeholder="Juan" required/>
+
+           <label for="apellido">Apellido</label>
+           <input id="txtApellido" type="text" name="apellido" placeholder="Perez" required/>
+
+           <label for="numero">Número de Tarjeta</label>
+           <input id="txtNumeroTarjeta" type="text" maxlength="16" name="numero" placeholder="1234 5678 9101 1121" required/>
+
+           <label for="Exp-Date">Exp. Date (MM/YY)</label>
+           <input id="txtExpDate" type="text" maxlength="7" name="Exp-Date" placeholder="02/40" required/>
+           
+           <label for="cvc">CVC</label>
+           <input id="txtCvc" type="text" maxlength="4" name="cvc" placeholder="1234" required/>
+           <br>
+           <br>
+           <input id="btnEnviar" type="submit"  value="Enviar"/>
+           
+
+        </div>
+
+    </form>
+
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
