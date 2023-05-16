@@ -1,48 +1,66 @@
+  /*Que tipo de selector estamos utilizando? Selector de Tipo:Selecciona elementos basados en el tipo de etiqueta.*/
+  /*Como manipular el fondo de nuestro elementos o el background*/
   body {
-    background-image:url(Img/imagen1.jpg);
-    padding: 60px 0;
-    background-color: rgba(107, 12, 56, 0.186);
-    margin: 0 auto;
-    width: 600px;
+    background-image: url(Img/9f4b607696ea4a8afa0af30698826dff.jpg);
+    background-size:contain; /*Nos permite redimensionar la imagen que nosotros tengamos de fondo. Le asignamos el siguiente valor:
+    contain: contiene la imagen dentro de las dimensiones que nosotros le especifiquemos a este elemento*/
+    background-repeat:repeat-y; /*repeat y: Eje vertical */
+    background-position:right; /* Cambiaremos la posición */
+    background-color: rgba(178,209,229,0.7); /*Le dara el color al fondo/Vamos a validar otra propiedad de color: 
+    regba: permite que podamos pasarle una opasidad o la transparencia  que va a tener este color*/
+    margin: 0 auto; /*Hara que nuestro elemento aparezca centrado*/
+    padding: 60px 0; /*Se indica dos valores el primero: superior e inferior y el segundo: derecho e izquierdo 
+    /Es el relleno, es decir, el espacio libre opcional entre el contenido y el borde.*/
+    width: 400px;
   }
 
+  /*Primer.Apellido.N° de tarjeta.Exp Date (MM/YY).CVC*/  
+  form{
+    font-size: 20px; /*Tamaño de la letra*/
+    font-family: "Lucida Sans" /*Estilo de la fuente*/
+  }
+
+  /*Información de pago*/
   h1 {
-    font-size: 25px;
-    font-family: "Lucida Sans"
+    font-size: 25px; /*Tamaño de la letra*/
+    font-family: "Lucida Sans" /*Estilo de la fuente*/
   }
   
-  form{
-    font-size: 20px;
-    font-family: "Lucida Sans"
+  /*Dentro de la caja del input*/
+  input {
+    background-color: #e5e2e8d3;
+    margin: 1px 0; /*Es la separación opcional existente entre la caja y el resto de las cajas adyacentes*/
+    padding-left: 5%; /*relleno izquierda / Es el relleno, es decir, el espacio libre opcional entre el contenido y el borde.*/
+    border-radius: 50px; /*Border-radius: Borde redondeado a nuestros bordes*/
+    font-size: 18px; /*tamaño de la letra del placeholder*/
   }
 
-  input {
-    margin: 1px 0;
-    padding-left: 3%;
-    font-size: 14px;
-  }
+  /*Selector de atributo: Selecciona elementos basados en el valor de un atributo específico*/
 
   input[type="text"]{
-    display: block;
-    height: 50px;
-    width: 97%;
-    border: none;
+    /* Border es la línea que encierra el contenido y el padding.*/
+    border: solid 1px rgb(23, 4, 17); /*Se esta utilizando la convención rgb tenemos indicar valores del 0  al 255 /solid es un valor
+    siendo el primer valor el rojo, el segundo el verde y el tercer el azul*/
+    display: block; /*Hara que los elementos partan en una nueva linea*/
+    height: 50px; /*El alto de la caja de un input*/
+    width: 97%;/*El ancho de la cajas de los input*/
   }
 
   input[type="submit"]{
-    display: block;
-    height: 60px;
-    width: 100%;
-    border-radius: 25px;
-    background-color: #a280b5d3;
-    color: #f2f4f3;
-    margin-top: 2px;
-    cursor: pointer;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    
+    background-color: #a280b5d3; /*valores hexadecimales tenemos que anotarlo con un simbolo al comienzo #
+     */
+    color: #fffffffe; /*Propiedad de color:Nos sirve para poder asignarle un color a la fuente o al 
+    que nosotros vamos a escribir dentro de nuestras etiquetas html*/
+    margin-top: 2px; /* margen superior*/
+    border-radius: 25px; /*Border-radius: Borde redondeado a nuestros bordes*/
+    height: 60px; /*Alto de la caja de enviar*/
+    width: 103%; /*El ancho de la caja de enviar*/
+    font-size: 0.9em; /*Tamaño de la palabra enviar / 0.9 em quiere decir en este caso em es relativo al tamaño de la fuente que tiene ese elemento 
+    en particular*/
+    display: block; /*La propiedad display: block hace que el elemento tenga como naturaleza posicionarse en bloques, por lo que siempre empiezan en una 
+    nueva línea y ocupan todo el espacio disponible en la línea, aunque sus contenidos no ocupen todo el sitio*/
+    cursor: pointer; /*Muestra el tipo de cursor que se mostrara cuando se apunte un elemnto*/
+    text-transform: uppercase; /*La text-transform propiedad controla las mayúsculas del texto*/
+    font-weight: bold; /*propiedad establece qué tan gruesos o delgados deben mostrarse los caracteres en el texto*/
   }
 
- 

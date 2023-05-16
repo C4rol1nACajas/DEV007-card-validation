@@ -1,45 +1,57 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html> <!--Le indica al explorador web que el contenido que nosotros estamos escribiendo en este doc es de tipo html5-->
+<html> <!--Es la etiqueta raíz de todo el doc html-->
+  <head> <!--En esta etiqueta podemos agregar caracteristicas que va a tener nuestra pagina web que no necesariamente seran visibles para el usuario-->
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Tarjeta de crédito válida</title> <!--En esta caso tenemos la etiqueta title. Indica cual va a ser el titulo de nuestra web-->
+    <link rel="stylesheet" href="style.css" /> <!--Se valida una etiqueta de link y le agregamos una propiedad rel (significa que este link esta relacionado a..) 
+     href (es el link o la ubicación de donde se encuentra nuestra archivo de css)-->
   </head>
-  <body>
+  <body> <!--Dentro de esta etiqueta es donde se va a incluir todo el contenido de nuestra web-->
    
-    <form id="formValidation">
-
-          <h1>INFORMACIÓN DE PAGO</h1>
+    <form id="formValidation"> <!--Dentro de la etiqueta de  form tenemos que colocar los distintos campos que tenemos que utilizar para poder recopilar información del usuario. 
+    Dentro de la etiqueta le asignamos un atributo Id se usa para especificar una identificación única para un elemento HTML.También lo utiliza JavaScript para acceder 
+    manipular el elemento con la identificación específica. Dentro del atributo le asignamos un valor "formValidation"-->
         
-        <div>
+       <header> <!-- especifica el encabezado del documento o de una sección. Debería contener contenido introductorio, y puede contener muchos elementos dentro.-->
+           <h1>INFORMACIÓN DE PAGO</h1> <!--La etiqueta de heading se utiliza para poder entregarle un titulo al contenido  Es la más importante de todas porque
+           le permite a los motores de búsqueda entender lo más destacado del contenido./Es un elemento semántico-->
+       </header> 
+
+        <div> <!--Se agrega la etiqueta div para definir una división o una sección en un documento HTML-->
         
-           <label for="primer-nombre">Primer Nombre</label>
-           <input id="txtPrimerNombre" type="text" name="primer-nombre" placeholder="Juan" required/>
+           <label for="txtPrimerNombre">Primer Nombre</label> <!--Para que haga sentido el dato que nosotros queremos recopilar del usuario debemos indicar una etiqueta llamada label y le vamos a indicar cual 
+            es el dato que estamos solicitando del usuario Primer Nombre/Incluimos una propiedad llamada for: aqui tenemos que indicar cual va a ser el identificador del campo al cual nosotros queremos dar el foco-->
+           <input id="txtPrimerNombre" type="text" maxlength="30" name="primer-nombre" placeholder="Juan" required/> <!--La etiqueta input crea un campo de texto. Luego  tenemos el 
+            atributo Id se usa para especificar una identificación única para un elemento HTML.También lo utiliza JavaScript para acceder manipular el elemento con la identificación específica. 
+            Dentro del atributo le asignamos un valor "textPrimerNombre"/type=text y es por defecto la entrada de una sola línea. También tenemos otros atributos: maxlenght que limita los campos a introducir-->
 
-           <label for="apellido">Apellido</label>
-           <input id="txtApellido" type="text" name="apellido" placeholder="Perez" required/>
+           <label for="txtApellido">Apellido</label>
+           <input id="txtApellido" type="text" maxlength="30" name="apellido" placeholder="Perez" required/> <!--Atributo name:Es muy importante porque cuando nosotros enviemos este formulario algún servidor,
+            eL servidor va a interpretar los datos del formulario por el nombre que nosotros le indiquemos. Esto quiere decir que el servidor va a recibir un objeto de formulario el cual va a contener 
+            una llave y un valor. La llave va a ser lo que nosotros le indiquemos name= ""  y el valor va a ser el contenido que va a tener nuestro campo. -->
 
-           <label for="numero">Número de Tarjeta</label>
+           <label for="txtNumeroTarjeta">Número de Tarjeta</label> 
            <input id="txtNumeroTarjeta" type="text" maxlength="16" name="numero" placeholder="1234 5678 9101 1121" required/>
 
-           <label for="Exp-Date">Exp. Date (MM/YY)</label>
+           <label for="txtExpDate">Exp. Date (MM/YY)</label>
            <input id="txtExpDate" type="text" maxlength="7" name="Exp-Date" placeholder="02/40" required/>
            
-           <label for="cvc">CVC</label>
+           <label for="txtCvc">CVC</label>
            <input id="txtCvc" type="text" maxlength="4" name="cvc" placeholder="1234" required/>
-           <br>
-           <br>
-           <input id="btnEnviar" type="submit"  value="Enviar"/>
+           <br> <!--Es una etiqueta de salto de linea-->
+           <input id="btnEnviar" type="submit"  value="Enviar"/> <!--En esta linea asignamos un valor al atributo de type que seria submit que se  representara como boton cuando ocurra el clik luego 
+          se añade un tributo value que tenga el valor de Enviar.-->
            
-
-        </div>
+        </div> 
 
     </form>
-
-
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+     <!--Elemento semantico de html:describe claramente lo que significa tanto para el navegador como para el desarrollador. Por ejemplo dentro del Form encontramos un formulario -->
+    <main></main> <!--es un contenedor que se utiliza para marcar el contenido principal de una página web. La idea detrás de la etiqueta <main> es tener una sección en la 
+    página web que contenga el contenido principal y exclusivo de la misma, que no se repita en otras páginas de la web.-->
+    <footer></footer> <!-- define el pie de página de un documento o de una sección.
+    Se suele usar para información de contacto, copyright, enlaces a términos de uso, etc.-->
+    <script src="index.js" type="module"></script>  <!-- La etiqueta de script se usa para definir un script de JavaScript del lado del cliente (navegador).Tenemos que advertir al navegador 
+    que el script Javascript usa módulos.Se agrega la etiqueta <script> y utiliza el atributo type con el valor "module" para indicar que estás importando un módulo.
+   -->
   </body>
 </html>
